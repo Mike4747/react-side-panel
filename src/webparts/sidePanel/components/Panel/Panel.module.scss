@@ -1,0 +1,237 @@
+$duration: 500ms;
+$width: 340px;
+$contentPadding: 0 28px 20px;
+
+:export { duration: $duration }
+
+.panel {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: $width;
+    background: white;
+    white-space: normal;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.4);
+    overflow-y: auto;
+    //background:#f7f7f7;
+    background-image: url(https://arrowelectronics.sharepoint.com/sites/globalenterpriseservices/SiteAssets/moon2.JPG);  background-repeat: no-repeat; background-size: cover;
+    //color:#ffffff!important;
+
+    &.left {
+        left: -$width;
+        transition: left $duration;
+        border-right: 1px solid #eaeaea;
+
+        &.visible {
+            left: 0px;
+        } 
+    }
+
+    &.right {
+        right: -$width;
+        transition: right $duration;
+        border-left: 1px solid #eaeaea;
+
+        &.visible {
+            right: 0px;
+        }
+    }
+
+    .header {
+        position: relative;
+
+        .closeButton {
+            float: right;
+            padding: 12px 12px 0 0;
+            color:#ffffff!important;
+        }
+
+        .clear {
+            clear: both;
+        }
+        .ms-Icon {
+            color:#fff!important;
+        }
+        .icon_c66bc28c {
+            color:#fff;
+        }
+        .ms-Icon--Cancel {
+            color:#fff;
+        }
+        .ms-Icon--Cancel:before {
+            color:#ffffff!important;
+        }
+    }
+
+    .content {
+        padding: $contentPadding;
+    }
+
+    p {
+        line-height:18px!important;
+        margin-bottom:10px!important;
+    }
+    h5 {
+        
+        margin-bottom:5px!important;
+    }
+    .ul {
+        padding-left:0px;
+        margin-left:0px;
+        margin-bottom:0px!important;
+    }
+
+    .li {
+        background:#e7e7e7!important;
+    }
+    .region {
+        font-weight:600!important;
+}
+.btnDefault:hover {
+    background-color:rgba(0, 0, 0, 0.7);
+
+}
+
+    .badge {
+        background:#eee!important;
+        font-weight:normal!important;
+
+    }
+    .ms-Icon--Cancel {
+        color:#fff;
+    }
+    .ms-Icon--Cancel:before {
+        color:#ffffff!important;
+    }
+    .closeButton {
+        color:#fff!important;
+    }
+    .icon_c66bc28c {
+        color:#ffffff!important;
+    }
+    .msIcon {
+        color:#ffffff!important;
+    }
+
+
+
+
+
+
+
+    .ms-Grid-col {
+        width:100%;
+    }
+    .headCol {
+        width:100%!important;
+        //border:1px solid #ddd;
+    }
+    .headTitle {
+        width:100%;
+        padding-left:0px;
+      }
+
+    .headPanel {
+        font-size:21px!important;
+        font-weight:200;
+        width:100%;
+    }
+    .headPanel1 {
+        font-size:17px!important;
+        font-weight:200;
+       
+        padding:10px;
+    }
+
+    .headPanel2 {
+        font-size:17px!important;
+        font-weight:200;
+        
+        padding:10px;
+    }
+    hr {
+        margin-top:3px;
+        margin-bottom:0px;
+    }
+    .card {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0px;
+    }
+    .card-body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 10px 20px 10px 20px;
+    }
+    .card-title {
+        font-size: 24px!important;
+    font-weight: 300!important;
+    }
+    .card-text {
+        line-height:18px!important;
+
+
+    }
+    .button {
+        color:#fff;
+
+    }
+    .btn {
+        border-radius:0px!important;
+    }
+    .btnDanger {
+     background: rgba(220, 53, 69, .3);
+     color:#333;
+     border:transparent;
+    }
+    .btnDanger:visited {
+
+        border:transparent;
+       }
+       .btnDanger:hover {
+
+        border:transparent;
+       }
+
+
+    .btnDark{
+        background: rgba(0, 0, 0, .4);
+        color:#fff;;
+        border:transparent;
+
+    }
+    .btnDark:visited{
+
+        border:transparent;
+
+    }
+    .btnDark:hover{
+
+        border:transparent;
+
+    }
+    
+
+
+      
+
+
+      
+
+
+
+
+}

@@ -1,0 +1,103 @@
+$duration: 500ms;
+$width: 340px;
+$contentPadding: 0 28px 20px;
+
+:export { duration: $duration }
+
+.panel {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: $width;
+    background: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.4);
+
+    &.left {
+        left: -$width;
+        transition: left $duration;
+        border-right: 1px solid #eaeaea;
+
+        &.visible {
+            left: 0px;
+        } 
+    }
+
+    &.right {
+        right: -$width;
+        transition: right $duration;
+        border-left: 1px solid #eaeaea;
+
+        &.visible {
+            right: 0px;
+        }
+    }
+
+    .header {
+        position: relative;
+
+        .closeButton {
+            float: right;
+            padding: 12px 12px 0 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+    }
+
+    .content {
+        padding: $contentPadding;
+    }
+
+    
+
+
+
+
+
+    .ms-Grid-col {
+        width:100%;
+    }
+    .headCol {
+        width:100%!important;
+        border:1px solid #ddd;
+    }
+    .headTitle {
+        width:100%;
+        padding-left:0px;
+      }
+
+    .headPanel {
+        font-size:21px!important;
+        font-weight:200;
+        width:100%;
+    }
+    .headPanel1 {
+        font-size:17px!important;
+        font-weight:200;
+       
+        padding:10px;
+    }
+
+    .headPanel2 {
+        font-size:17px!important;
+        font-weight:200;
+        
+        padding:10px;
+    }
+    hr {
+        margin-top:3px;
+        margin-bottom:0px;
+      }
+
+      
+
+
+      
+
+
+
+
+}
